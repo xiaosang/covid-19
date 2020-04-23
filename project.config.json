@@ -15,7 +15,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",
 	"appid": "wx4ce6fa524f8594c3",
-	"projectname": "COVID-19",
+	"projectname": "covid-19",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
