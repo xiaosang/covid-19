@@ -1,17 +1,17 @@
 {
-    "pages": [
-        "pages/home/home",
-        "pages/index/index",
-        "pages/logs/logs"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#EDEDED",
-        "navigationBarTitleText": "WeChat",
-        "navigationBarTextStyle": "black",
-        "backgroundColor": "#ededed"
-
-    },
-    "style": "v2",
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/home/home",
+    "pages/doctor/doctor",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ededed"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
 }
