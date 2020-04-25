@@ -5,15 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    cxt: null,
-    imgPath: '',//上传图片
+    infoShow: false,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.ctx = wx.createCameraContext()
+    
   },
 
   /**
@@ -41,29 +40,16 @@ Page({
     }
   },
   onClickScan: function () {
-    //选择图片或拍照
-    wx.chooseImage({
-      count: 1,
+    wx.showActionSheet({
+      itemList: ['识别试纸'],
       success: (res) => {
         this.setData({
-          imgPath: res.tempFilePaths[0]
+          infoShow: true
         })
-        // this.data.imgPath = res.tempFilePaths
-        // console.log(this.data.imgPath)
+      },
+      fail: (res) => {
+        console.log(res.errMsg)
       }
     })
-
-    // this.ctx.takePhoto({
-    //   quality: 'high',
-    //   success: (res) => {
-    //     // wx.getFileSystemManager().readFile({
-    //     //   // filePath:
-    //     // });
-    //   },
-    //   error(e) {
-    //     console.log(e.detail)
-    //   }
-      
-    // })
   }
 })

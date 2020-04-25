@@ -5,7 +5,7 @@
   <view class="body">
     <text class="title">轻触卡片以切换入口</text>
     <view class="line"></view>
-    <view class="card">
+    <view class="card" bindtap="onTapUser">
       <image class="photo" src="../../res/images/patient.png"></image>
       <view class="card-right">
         <text class="big-title">普通用户进入</text>
