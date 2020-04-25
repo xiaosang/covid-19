@@ -26,5 +26,10 @@ Page({
         wx.navigateTo({
           url: '../doctor/doctor',
         })
+    },
+    onTapData: function () {
+      wx.navigateTo({
+        url: '../datas/datas',
+      })
     }
 })
