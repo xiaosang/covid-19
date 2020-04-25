@@ -3,8 +3,10 @@
     "pages/home/home",
     "pages/doctor/doctor",
     "pages/user/user",
+    "pages/datas/datas",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/camera/camera"
   ],
   "window": {
     "backgroundTextStyle": "light",

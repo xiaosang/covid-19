@@ -1,0 +1,12 @@
+<!--pages/datas/datas.wxml-->
+<scroll-view class="container" scroll-y="true">
+  <image class="photo" mode="widthFix" src="../../res/images/1.png"></image>
+  <image class="photo" mode="widthFix" src="../../res/images/2.png"></image>
+  <image class="photo" mode="widthFix" src="../../res/images/3.png"></image>
+  <image class="photo" mode="widthFix" src="../../res/images/4.png"></image>
+  <image class="photo" mode="widthFix" src="../../res/images/6.png"></image>
+  <image class="photo" mode="widthFix" src="../../res/images/7.png"></image>
+  <image class="photo" mode="widthFix" src="../../res/images/8.png"></image>
+</scroll-view>
+
+

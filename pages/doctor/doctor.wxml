@@ -2,32 +2,30 @@
 <view class="container">
   <!-- <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera> -->
 
-  <image class="scan" src="../../res/images/barcode.png" bindtap="onClickScan"></image>
+  <image class="scan" src="{{imageUrl}}" bindtap="onClickScan"></image>
   <text class="big-tip">需要拍摄含有试纸的区域</text>
   <text class="small-tip">系统将通过图片识别试纸的测试结果</text>
 
-  
-  <view class="button-group" style="">
-    <button style="margin-right: 10px; background-color: #E64340" type="primary" bindtap="onClickScan">拍照</button>
-    <button type="primary" bindtap="onTapPost">上报</button>
-  </view>
   <view class="info-1" wx:if="{{imgPath != ''}}">
     <view class="info-1-1"  style="border-right: 0.5px solid #ccc;">
       <text style="font-size: 12px;">姓名</text>
-      <text style="font-size: 16px; margin-top: 5px;">托里斯福基</text>
+      <text style="font-size: 16px; margin-top: 5px; color: {{color}}">{{name}}</text>
     </view>
     <view class="info-1-1" style="flex: 1; margin-left: 10px;">
       <text style="font-size: 12px;">姓别</text>
-      <text style="font-size: 16px; margin-top: 5px;">男</text>
+      <text style="font-size: 16px; margin-top: 5px; color: {{color}}">{{gender}}</text>
     </view>
   </view>
   <view class="info-1-1 info-1-2" wx:if="{{imgPath != ''}}">
     <text style="font-size: 12px;">电话</text>
-    <text style="font-size: 16px; margin-top: 5px;">18338911966</text>
+    <text style="font-size: 16px; margin-top: 5px; color: {{color}}">{{phone}}</text>
   </view>
   <view class="info-1-1 info-1-2" style="max-height: 70px;" wx:if="{{imgPath != ''}}">
     <text style="font-size: 12px;">测试结果</text>
-    <text class="result">阳性</text>
+    <text class="result" style="color: {{resultColor}}">{{result}}</text>
   </view>
-  <image class="uploadImg" src="{{imgPath}}"></image>
+  <view class="button-group" style="">
+    <button style="margin-right: 10px; background-color: #E64340" type="primary" bindtap="onClickScan">拍照分析</button>
+    <button type="primary" bindtap="onTapPost">上报</button>
+  </view>
 </view>
